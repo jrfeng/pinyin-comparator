@@ -47,9 +47,9 @@ public class Main {
 
 ## 自定义字典
 
-本项目依赖 [TinyPinyin](https://github.com/promeG/TinyPinyin) 来获取中文的拼音，更多内容，请参考 [TinyPinyin](https://github.com/promeG/TinyPinyin)
+本项目依赖 [TinyPinyin](https://github.com/promeG/TinyPinyin) 获取中文拼音，更多内容，请参考 [TinyPinyin](https://github.com/promeG/TinyPinyin)
 
-[使用自定义字典：]()
+使用自定义字典：
 
 ```java
 Pinyin.init(Pinyin.newConfig()
