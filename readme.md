@@ -47,27 +47,9 @@ public class Main {
 
 ## 自定义字典
 
-本项目依赖 [TinyPinyin](https://github.com/promeG/TinyPinyin) 来获取中文的拼音，如需使用自定义字典，还需添加对 [TinyPinyin](https://github.com/promeG/TinyPinyin) 的依赖。
+本项目依赖 [TinyPinyin](https://github.com/promeG/TinyPinyin) 来获取中文的拼音，更多内容，请参考 [TinyPinyin](https://github.com/promeG/TinyPinyin)
 
-将以下代码添加到项目根目录下的 `build.gradle` 文件中：
-
-```gradle
-repositories {
-    ...
-    jcenter()
-}
-```
-
-添加 TinyPinyin 依赖：
-
-```gradle
-implementation 'com.github.promeg:tinypinyin:2.0.3'
-
-implementation 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3' // 可选，适用于 Android 的中国地区词典
-implementation 'com.github.promeg:tinypinyin-lexicons-java-cncity:2.0.3'    // 可选，适用于 Java 的中国地区词典
-```
-
-使用自定义字典：
+[使用自定义字典：]()
 
 ```java
 Pinyin.init(Pinyin.newConfig()
@@ -80,8 +62,6 @@ Pinyin.init(Pinyin.newConfig()
                 }
             }));
 ```
-
-更多内容，请参考 [TinyPinyin](https://github.com/promeG/TinyPinyin)。
 
 ## LICENSE
 
