@@ -40,7 +40,7 @@ public class PinyinComparator implements Comparator<String> {
             }
         }
 
-        return 0;
+        return Integer.compare(listA.size(), listB.size());
     }
 
     private static boolean isNumber(char c) {
@@ -185,7 +185,7 @@ public class PinyinComparator implements Comparator<String> {
                 return this.stringValue.compareToIgnoreCase(o.stringValue);
             }
 
-            return this.intValue - o.intValue;
+            return Integer.compare(this.intValue, o.intValue);
         }
 
         // 数字类型小于字符串类型
