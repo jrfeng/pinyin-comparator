@@ -191,10 +191,12 @@ public class PinyinComparator implements Comparator<String> {
         // 数字类型小于字符串类型
         private int compareType(Element o) {
             if (o.type == TYPE_INTEGER) {
-                return -1;
+                // 当前 Element 是字符串
+                return 1;
             }
 
-            return 1;
+            // 另一个 Element 是字符串
+            return -1;
         }
 
         public static int getType(char c) {

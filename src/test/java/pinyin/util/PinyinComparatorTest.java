@@ -109,4 +109,13 @@ public class PinyinComparatorTest {
         final PinyinComparator comparator = new PinyinComparator();
         assertTrue(comparator.compare(s1, s2) < 0);
     }
+
+    @Test
+    public void compareTest10() {
+        final String s1 = "123hello";
+        final String s2 = "hello";
+
+        final PinyinComparator comparator = new PinyinComparator();
+        assertTrue(comparator.compare(s1, s2) < 0);
+    }
 }
