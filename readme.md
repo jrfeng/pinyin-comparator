@@ -16,7 +16,7 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'com.github.jrfeng:pinyin-comparator:0.1.1'
+    implementation 'com.github.jrfeng:pinyin-comparator:1.0'
 }
 ```
 
